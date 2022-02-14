@@ -1,0 +1,139 @@
+html {
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg,  #0e1111,  #0e1111 );
+  min-height: 100vh;
+  font-family: 'helvetica neue';
+}
+.checbox::after{
+  content: " +";
+  background: white;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+
+  opacity: 1;
+}
+.checbox{
+  opacity: 0.8;
+  color: #0e1111;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transform: rotateZ(45deg);
+
+}
+h1 {
+  color: #fff;
+  padding: 10px;
+  font-family: "Architects Daughter", cursive;
+   text-align: center;
+
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+    border-radius: 20% 10% 30% 5%/5% 20% 25% 20%;
+  background: white;
+
+  box-shadow: 4px 4px -5px black;
+
+}
+
+#heading {
+  box-shadow: -0.5px -0.5px 1px 5px #fff;
+
+  background-color: #0e1111;
+  text-align: center;
+    border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+    flex-direction: row-reverse;
+  justify-content: space-between;
+box-shadow: 0 -1px 1px #0b1111  ;
+
+}
+.item2 {
+  min-height: 70px;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+
+button:focus{
+  transform: rotateZ(50deg);
+}
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "Architects Daughter", cursive;
+  color: #00204a;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  min-width: 50px;
+  margin-right: 10px;
+justify-self:flex-end;
+
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #0e1111;
+  color: #fff;
+  font-size: 30px;
+text-align: center;
+  padding-bottom: 0px;
+  transition: 0.5s;
+  border-width: 0;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  min-width: 100px;
+
+}
+
+input[type="text"]:focus {
+  outline: none;
+
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}

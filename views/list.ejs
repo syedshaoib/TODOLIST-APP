@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+ <div class="box" id="heading">
+   <h1 style=""> <%= title %></h1>
+
+
+ </div>
+
+
+<div class="box">
+
+    <%   for(var i=0;i<thig.length; i++) {   %>
+
+  <form class="" action="/del" method="post">
+    <div class="item">
+
+      <input type="checkbox"   class="checbox" name="checkbox" value= <%= thig[i]._id %>  onchange="this.form.submit()" >
+          <p> <%= thig[i].item %></p>
+
+    </div>
+<input type="hidden" name="ListName" value="<%= title %>"></input>
+
+  </form>
+    <%}%>
+    <form class="item2 " action="/" method="post">
+      <input placeholder="Add todo item" type="text" name="item" autocomplete="off">
+      <button type="submit" name="list" value=  <%=title %> >+</button>
+    </form>
+</div>
+
+
+
+  </body>
+</html>
